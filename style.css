@@ -1,0 +1,131 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+    font-size: 1em;
+  }
+
+  .card {
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 30px 10px;
+  width: auto;
+}
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    font-size: 1.2em;
+  }
+
+  .card {
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 30px 10px;
+  width: auto;
+}
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    font-size: 1.5em;
+  }
+
+  .card {
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 30px 10px;
+  width: auto;
+}
+}
+
+
+body {
+  background-color: #F7F9FC;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #141B41;
+}
+
+p {
+  color: #141B41;
+}
+
+a {
+  color: #145C9E;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a:hover {
+  color: #538BDB;
+}
+
+.img-circle-shadowed {
+  border-radius: 150px;
+  width: 100px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #FFFFFF;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding: 40px;
+  margin: 30px 10px;
+}
+
+div {
+  display: block;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.btn-blue {
+  width: 150px;
+  padding :10px;
+  background-color: #145C9E;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.btn-blue:hover {
+  background-color: #538BDB;
+  color: #FFFFFF;
+}
+
+.footer-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
