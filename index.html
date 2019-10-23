@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="style.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Quicksand:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>My profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Clémentine</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-      <h1>Hello World 🌎</h1>
-        <img src="images/Clementine.JPG" alt="Clementine Nocton" class="img-circle-shadowed">
-        <h2>Clémentine Nocton, Programmer 💻</h2>
-        <p class="padding-bottom-10">Graduated a month ago from a master degree in Digital Marketing, I'm now learning how to be a fullstack developer @Le Wagon.</p>
-        <a href="https://www.lewagon.com/fr" class="btn-blue">Discover Le Wagon</a>
-      </div>
+    <ul class="tabs-underlined">
+        <li data-tab-target="#profil" class="tab-underlined active">Profil</li>
+        <!--
+        <li data-tab-target="#formation" class="tab-underlined">Formation</li>
+        <li data-tab-target="#experience" class="tab-underlined">Experiences</li>
+        -->
+        <li data-tab-target="#projets" class="tab-underlined">Projets</li>
+    </ul>
 
-      <div class="card">
-        <h2 class="footer-margin">Follow me</h2>
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.linkedin.com/in/cl%C3%A9mentine-nocton-101111b7/">
-              <i class="fab fa-linkedin fa-3x"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Cleemn">
-              <i class="fab fa-github-square fa-3x"></i>
-            </a>
-          </li>
-        </ul>
+    <div class="tab-content">
+      <div id="profil" data-tab-content class="active">
+        <div class="container pb-5">
+          <div class="d-flex justify-content-around align-items-center pt-3 pb-2">
+            <div class="profil">
+              <h2>Clémentine Nocton</h2>
+              <h4>Junior Fullstack Developer</h4>
+              <br>
+              <div class="phone d-flex align-items-center">
+                <i class="fas fa-phone pb-3 px-2"></i><p>+ 33 6 29 83 29 97</p>
+              </div>
+              <div class="mail d-flex align-items-center">
+                <i class="fas fa-at pb-3 px-2"></i><p>clementine.nocton@audencia.com</p>
+              </div>
+              <div class="location d-flex align-items-center">
+                <i class="fas fa-search-location pb-3 px-2"></i><p>Paris, France</p>
+              </div>
+            </div>
+            <img class="avatar-bordered" src="images/Clementine.JPG" alt="Clémentine Nocton">
+          </div>
+          <div class="container-description">
+            <em>
+              <p>Tout juste diplomée d'un master en marketing digital, j'ai souhaité apporter une dimension technique à ma formation de base. J'ai donc participé au batch #291 du Wagon à Paris, et j'ai ainsi eu l'occasion de travailler sur plusieurs projets.</p>
+              <p>Lors de ma formation au Wagon, j'ai notamment découvert Ruby on Rails, ainsi que Javascript, HTML ou CSS. Je suis de nature curieuse et je sais que le monde de la programmation informatique est en constante évolution. Aussi, je souhaiterai me perfectionner et continuer à travailler sur des projets en tant que développeur fullstack.</p>
+              <p>Je n'ai pas peur de "mettre les mains dans le cambouis" et j'aime le travail bien fait, aussi je n'hésite pas à prendre le temps pour aller au bout des choses.</p>
+            </em>
+          </div>
+        </div>
+      </div>
+      <div id="formation" data-tab-content>
+        <h1>Formations</h1>
+        <p>This is my formations</p>
+      </div>
+      <div id="experience" data-tab-content>
+        <h1>Experience</h1>
+        <p>This is my experiences</p>
+      </div>
+      <div id="projets" data-tab-content>
+        <div class="projets d-flex justify-content-center pb-4">
+          <div class="row">
+            <div class="card-project traveleasy px-5 text-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <h4 class="px-2">TravelEasy</h4>
+                <a href="https://airbnb-traveleasy.herokuapp.com"><i class="fas fa-link fa-1x px-2"></i></a>
+              </div>
+              <p>Plateforme de location pour du matériel de voyage.</p>
+              <p><small>Ruby, HTML, CSS, Javascript</small></p>
+              <img class="avatar-square" src="images/TravelEasy.png" alt="TravelEasy" data-aos="fade-right">
+            </div>
+            <div class="card-project fetiche px-5 text-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <h4 class="px-2">Fétiche</h4>
+                <a href="https://www.fetiche.io"><i class="fas fa-link fa-1x px-2"></i></a>
+                <a href="https://youtu.be/hb8TT6Z1ptE?t=1859"><i class="fab fa-youtube fa-1x px-2"></i></a>
+              </div>
+              <p>Site de rencontre pour adeptes du fétichisme.</p>
+              <p><small>Ruby, HTML, CSS, Javascript</small></p>
+              <img class="avatar-rectangle" src="images/Fetiche.jpg" alt="Fetiche" data-aos="fade-left">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="footer">
+      <div class="footer-links d-flex justify-content-center align-items-center py-3">
+        <a href="https://github.com/Cleemn"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cl%C3%A9mentine-nocton-101111b7/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
