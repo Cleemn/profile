@@ -128,5 +128,9 @@ body {
 
 .card-project {
   grid-template-columns: repeat(2, 1fr);
+  max-width: 530px;
 }
 
+li {
+  list-style: none;
+}
