@@ -60,6 +60,6 @@ p {
 
 @media (min-width: 768px) {
     .container {
-        max-width: 800px !important;
+        max-width: 900px !important;
     }
 }
